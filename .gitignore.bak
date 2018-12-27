@@ -1,29 +1,3 @@
-*.class
-#package file
-
-*.war
-*.ear
-#meaven target
-target/
-#eaplice
-.settings/
-.project
-.classpath
-#idea
-
-.idea
-/idea/
-.ipr
-.iws
-.iml
-
-#temp file
-*.log
-*.cache
-*.diff
-*.patch
-*.tmp
-
-#system
-.DS_Stroe
-Thumbs.db
+DS_Stroe
+/node_modules/
+/dist/
