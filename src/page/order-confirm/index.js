@@ -18,14 +18,15 @@ var addressModal      = require('./address-modal.js');
 
 var page = {
     data : {
-
+        selectedAddressId : null 
     },
     init : function(){
         this.onLoad();
         this.bindEvent();
     },
     onLoad : function(){
-        this.loadCart();
+        this.loadAddressList();
+        this.loadProductList();
     },
     bindEvent : function() {
         var _this = this;
@@ -34,17 +35,17 @@ var page = {
         //地址的选择
         $(document).on('click','.address-item',function(){
             $(this).addClass('active')
-        .siblings('.address-item').removeClass('active');
+                .siblings('.address-item').removeClass('active');
             this.data.selectedAddressId =$(this).data('id');
 
         });
-
+        //订单的提交
         $(document).on('click','.order-submit',function(){
-            var shippingId=this.data.selectedAddressId;
+            var shippingId=_this.data.selectedAddressId;
             if(shippingrd){
 
                 _order.createOrder({
-                    shippingId:shippingId
+                    shippingId : shippingId
                 }, function(res) {
                     window.Location.href = "./payment.html?orderNumber=" + res.orderNo;
                 },function(errMsg){
@@ -63,7 +64,7 @@ var page = {
                 isUpdate: false,
 
                 onSuccess: function(){
-                    this.loadAddressList();
+                    _this.loadAddressList();
                 }
             });
         });

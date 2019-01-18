@@ -26,7 +26,7 @@ var addressModal = {
             _this.loadCities(selectedProvince);
         });
 
-        //省份和城市的二级联动
+        //提交收货地址
         this.$modalWrap.find('.address-btn').click(function() {
             var receiverInfo=_this. getReceiverInfo(),
                 isUpdate =_this.option.isUpdate;

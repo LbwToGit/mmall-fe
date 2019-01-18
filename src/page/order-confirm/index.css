@@ -44,21 +44,21 @@
     visibility:visible;
 }
 
-.address-item.address-opera.link {
+.address-item .address-opera.link {
     margin-right: 5px;
 }
 
 
-.address-add.address-new {
+.address-add .address-new {
     padding: 8px 0;
     text-align: center;
     color: #ccc;
 }
-.address-add.address-new.fa {
+.address-add .address-new.fa {
     font-size: 50px;
     Line-height: 50px;
 }
-.address-add.address-new.text {
+.address-add .address-new.text {
     font-size: 12px;
 }
 
@@ -75,31 +75,31 @@
     border-bottom:1px dotted #ddd;
 }
 
-.product-table.cell-img {
+.product-table .cell-img {
     padding: 10px;
     width:10% ;
     text-align : center;
 }
 
-.product-table.cell-img.p-img {
+.product-table .cell-img.p-img {
     width: 80px;
     height: 80px;
     border: 1px solid #ddd;
 }
 
-.product-table.cell-info {
+.product-table .cell-info {
     width:30% ;
     text-align : left;
 }
-.product-table.cell-price {
+.product-table .cell-price {
     width:20% ;
     text-align : center;
 }
-.product-table.cell-count {
+.product-table .cell-count {
     width:20% ;
     text-align : center;
 }
-.product-table.cell-total {
+.product-table .cell-total {
     width:20% ;
     text-align : center;
     vertical-align: middle;
@@ -111,12 +111,12 @@
     background:#eee;
     text-align:right;
 }
-.submit-con.submit-total {
+.submit-con .submit-total {
     font-size:18px;
     color:#c60023;
     font-weight:bold;
 }
-.submit-con.order-submit {
+.submit-con .order-submit {
     height:50px;
     line-height:50px;
     width:100px;
@@ -138,38 +138,38 @@
     overflow-y: auto;
 }
 
-.modal.modal-container {
+.modal .modal-container {
     width: 700px;
     margin: 50px auto;
     background: #fff;
     border-radius: 2px;
 }
-.modal.modal-container.modal-header {
+.modal .modal-container .modal-header {
     position: relative;
     padding: 15px;
     border-bottom: 1px solid #ccc;
 }
-.modal.modal-container.modal-header.modal-title{
+.modal .modal-container .modal-header .modal-title{
     font-size:14px;
 }
 
-.modal.modal-container.modal-header.close {
+.modal .modal-container .modal-header.close {
     position: absolute;
     padding: 10px;
     right: 10px;
     top: 10px;
     cursor: pointer;
 }
-.modal.modal-container.modal-body{
+.modal .modal-container.modal-body{
     padding:15px;
 }
 
 
 /*form部分*/
-.form.form-line{
+.form .form-line{
     margin:5px 0;overflow:hidden;
 }
-.form.form-line.label{
+.form .form-line.label{
     display:block;
     float:left;
     width:85px;
@@ -187,7 +187,7 @@
 }
 
 .form .form-line .form-item {
-    padding: 05px;
+    padding: 0 5px;
     height: 30px;
     line-height: 30px;
     outline: none;
