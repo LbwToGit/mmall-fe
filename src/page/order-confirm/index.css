@@ -5,7 +5,7 @@
 * @Last Modified time: 2017-05-29 16:44:22
 */
 .address-item,
-.address-add{
+.address-add {
     margin:20px 20px 0 0;
     width:200px;
     padding:5px 8px;
@@ -17,34 +17,35 @@
 .address-item.active {
     border: 3px dashed #c60023;
 }
-.address-item:hover,
-.address-add:hover{
+.address-item :hover,
+.address-add :hover{
     background: #fafafa;
 }
 
-.address-item.address-title {
+.address-item .address-title {
+
     color: #666;
     height: 20px;
     line-height: 20px;
     overflow: hidden;
     border-bottom: 1px solid #ddd;
 }
-.address-item.address-detail {
+.address-item .address-detail {
     margin-top: 5px;
     height: 40px;
     line-height: 20px;
     overflow: hidden;
     color: #666;
 }
-.address-item.address-opera{
+.address-item .address-opera{
     text-align:right;
     visibility: hidden;
 }
-.address-item:hover.address-opera{
+.address-item:hover .address-opera{
     visibility:visible;
 }
 
-.address-item .address-opera.link {
+.address-item .address-opera .link {
     margin-right: 5px;
 }
 
@@ -54,11 +55,11 @@
     text-align: center;
     color: #ccc;
 }
-.address-add .address-new.fa {
+.address-add .address-new .fa {
     font-size: 50px;
-    Line-height: 50px;
+    line-height: 50px;
 }
-.address-add .address-new.text {
+.address-add .address-new .text {
     font-size: 12px;
 }
 
@@ -72,7 +73,7 @@
 
 .product-table th,
 .product-table td{
-    border-bottom:1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
 }
 
 .product-table .cell-img {
@@ -81,7 +82,7 @@
     text-align : center;
 }
 
-.product-table .cell-img.p-img {
+.product-table .cell-img .p-img {
     width: 80px;
     height: 80px;
     border: 1px solid #ddd;
@@ -167,7 +168,8 @@
 
 /*form部分*/
 .form .form-line{
-    margin:5px 0;overflow:hidden;
+    margin: 5px 0;
+    overflow :  hidden;
 }
 .form .form-line.label{
     display:block;
@@ -196,7 +198,7 @@
 .form .form-line .btn{
     margin-left:95px;
     height:30px;
-    line-hetght:30px;
+    line-height:30px;
     font-size:13px;
 }
 

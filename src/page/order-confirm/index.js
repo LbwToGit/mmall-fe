@@ -42,7 +42,7 @@ var page = {
         //订单的提交
         $(document).on('click','.order-submit',function(){
             var shippingId=_this.data.selectedAddressId;
-            if(shippingrd){
+            if(shippingId){
 
                 _order.createOrder({
                     shippingId : shippingId
@@ -53,7 +53,7 @@ var page = {
                 });
 
             }else{
-                -mm.errorTips('请选择地址后再提交');
+                _mm.errorTips('请选择地址后再提交');
             }
 
         });
@@ -130,9 +130,9 @@ var page = {
                     data.list[i].isActive=true;
                     selectedAddressIdFlag =true;
                 }
-            }
-            if(! selectedAddressIdFlag){
-                this.data.selectedAddressId=nul1;
+            };
+            if(!selectedAddressIdFlag){
+                this.data.selectedAddressId=null;
             }
         }
     },

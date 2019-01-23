@@ -4,18 +4,18 @@
 <div class="address-item active" data-id="{{id}}">
 {{/isActive}}
 {{^isActive}}
-<div class="address-item" data-id="{{id}}">
+            <div class="address-item" data-id="{{id}}">
 {{/isActive}}
 
                 <div class="address-title">
-                    {{receiverCity}} {{receiverProvince}} (  {{receiverName}}  ’ )
+                    {{receiverCity}} {{receiverProvince}} (  {{receiverName}} Êî∂ )
                 </div>
                 <div class="address-detail">
                     {{receiverAddress}} {{receiverPhone}}
                 </div>
                 <div class="address-opera">
-                    <span class="link address-update">±‡º≠</span>
-                    <span class="link address-delete">…æ≥˝</span>
+                    <span class="link address-update">ÁºñËæë</span>
+                    <span class="link address-delete">Âà†Èô§</span>
                 </div>
             </div>
 </div>
@@ -23,7 +23,7 @@
             <div class="address-add">
                 <div class="address-new">
                     <i class="fa fa-plus"></i>
-                <div class="text"> π”√–¬µÿ÷∑</div>
+                    <div class="text">‰ΩøÁî®Êñ∞Âú∞ÂùÄ</div>
 
                 </div>
             </div>

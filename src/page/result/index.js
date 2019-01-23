@@ -20,4 +20,4 @@ $(function(){
         $orderNumber.attr('href',$orderNumber.attr('href')+orderNumber);
     }
     $element.show();
-})
+});

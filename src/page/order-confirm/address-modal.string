@@ -3,10 +3,10 @@
 
         <div class="modal-header">
             {{#isUpdate}}
-            <h1 class="modal-title">���µ�ַ</h1>
+            <h1 class="modal-title">更新地址</h1>
             {{/isUpdate}}
             {{^isUpdate}}
-            <h1 class="modal-title">ʹ���µ�ַ</h1>
+            <h1 class="modal-title">使用新地址</h1>
             {{/isUpdate}}
 
             <i class="fa fa-close close"></i>
@@ -17,44 +17,44 @@
             <div class="form">
                 <div class="form-line">
                     <label class="label" for="receiver-name">
-                        <span class="required">*</span>�ռ���������</label>
+                        <span class="required">*</span>收件人姓名：</label>
                     <input class="form-item" id="receiver-name"
-                           placeholder="�������ռ�������" value="{{data.receiverName}}"/>
+                           placeholder="请输入收件人姓名" value="{{data.receiverName}}"/>
                 </div>
                 <div class="form-line">
                     <label class="label" for="receiver-province">
                         <span class="required">*</span>
-                        ���ڳ��У�</label>
+                        所在城市：</label>
                     <select class="form-item" id="receiver-province">
-                        <option value="">��ѡ��</option>
+                        <option value="">请选择：</option>
                     </select>
                     <select class="form-item" id="receiver-city">
-                        <option value="">��ѡ��</option>
+                        <option value="">请选择：</option>
                     </select>
                 </div>
                 <div class="form-line">
                     <label class="label" for="receiver-address">
                         <span class="required">*</span>
-                        ��ϸ��ַ��</label>
+                        详细地址：</label>
                     <input class="form-item" id="receiver-address"
-                           placeholder="�뾫ȷ�����ƺ�" value="{{data.receiverAddress}}"/>
+                           placeholder="请精确到门牌号" value="{{data.receiverAddress}}"/>
                 </div>
                 <div class="form-line">
                     <label class="label" for="receiver-phone">
                         <span class="required">*</span>
-                        �ռ����ֻ���</label>
+                        收件人手机：</label>
                     <input class="form-item" id="receiver-phone"
-                           placeholder="������11λ�ֻ�" value="{{data.receiverPhone}}"/>
+                           placeholder="请输入11位手机" value="{{data.receiverPhone}}"/>
                 </div>
                 <div class="form-line">
-                    <label class="label" for="receiver-zip">�������룺</label>
+                    <label class="label" for="receiver-zip">邮政编码：</label>
                     <input class="form-item" id="receiver-zip"
-                           placeholder="�磺1000000" value="{{data.receiverZip}}"/>
+                           placeholder="如：1000000" value="{{data.receiverZip}}"/>
                 </div>
 
                 <div class="form-line">
                     <input type="hidden" id="receiver-id" value="{{data.id}}"/>
-                    <a class="btn address-btn">�����ջ���ַ</a>
+                    <a class="btn address-btn">保存收货地址</a>
                 </div>
             </div>
 

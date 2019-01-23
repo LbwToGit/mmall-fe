@@ -37,7 +37,7 @@ var addressModal = {
                     _mm.successTips('地址添加成功');
                     _this.hide();
                     typeof _this.option.onSuccess === 'function'
-                    &&_this.option.onSuccess(res);
+                    && _this.option.onSuccess(res);
 
                 },function(errMsg){
                     _mm.errorTips(errMsg);
@@ -55,7 +55,7 @@ var addressModal = {
                     _mm.errorTips(errMsg);
                 });
             }else{
-                -mm.errorTips(receiverInfo.errMsg ||'好像哪里不对了~');
+                _mm.errorTips(receiverInfo.errMsg ||'好像哪里不对了~');
                 
             }
         });
@@ -103,7 +103,7 @@ var addressModal = {
         }
     },
     getReceiverInfo : function(){
-      var   receiverInfo={};
+      var   receiverInfo={},
         result={
             status: false
         };
